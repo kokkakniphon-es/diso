@@ -1144,7 +1144,7 @@ namespace cudualmc
   template struct CUDualMC<double, int>;
   template struct CUDualMC<float, int>;
 
-  template void cudualmc::CUDualMC<double, int>::forward(
+  template void CUDualMC<double, int>::forward(
     const double *d_data,
     const cudualmc::Vertex<double> *d_deform,
     int dimX, int dimY, int dimZ,
